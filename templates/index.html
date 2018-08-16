@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h3> Hi i'm Arif, python programer </h3>
+<div>
+    <p>
+        Name:{{ name|upper }} # '|' bole pip r method upper hosse filter
+    </p>
+    <p>
+        Country Name:{{ country|lower }}
+    </p>
+    <p>
+        Designation :{{ desig }}
+    </p>
+    <p>
+        {% for num in list %}
+        {% if num <= 3 %}
+        <h{{ num }}>I am a big python programer.positive </h{{ num }}>
+        {% else %}
+        <h{{ num }}>I am a big python programer.small positive </h{{ num }}>
+        {% endif %}
+        {% endfor %}
+
+    </p>
+</div>
+{% endblock  %}
